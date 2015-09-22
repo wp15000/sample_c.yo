@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>森の工房 [Forest Studio] - お問い合わせ</title>
+<title>川の中の風景</title>
 <meta name="viewport" content="width=device-width">
 <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Righteous'type='text/css'>
 <style>
@@ -251,6 +251,12 @@ label span {
 	color: #ff0000;
 }
 
+/* ビデオ */
+article {
+	text-align: center;
+	margin: 30px 0 100px;
+}
+
 /* ================ PC 用の設定 ============ */
 @media only screen and (min-width: 900px) {
 	/* ３段組み */
@@ -302,6 +308,11 @@ label span {
 
 	nav ul li a {
 		width: 100px;
+	}
+
+	video {
+		width: 480px;
+		height: 270px;
 	}
 }
 
@@ -359,6 +370,11 @@ label span {
 		text-align: center;
 		margin-bottom: 15px;
 	}
+
+	video {
+		width: 280px;
+		height: 157px;
+	}
 }
 </style>
 </head>
@@ -381,49 +397,18 @@ label span {
 	<li><a href="event.html">季節のイベント</a></li>
 	<li><a href="contact.html">お問い合わせ</a></li>
 	<li><a href="http://blog.xxx.xxx/">ブログ</a></li>
-	<li><a href="river.html">川の中の風景</a></li>
 	</ul>
 </nav>
 
-<img src="header.jpg" height="300" width="900" alt="">
 </header>
 
 <!-- コンテンツ -->
 <article>
-<header>
-	<h1>お問い合わせ</h1>
-	
-	<p id="summary">ご意見、ご感想などがありましたら、以下の欄にご記入の上、送信してください。また、森の工房やイベントに関するご質問などもお気軽にお寄せください。<br />
-	（※送信後はトップページに戻ります。）</p>
-</header>
+	<h1>川の中の風景</h1>
 
-<form action="https://www.rescuesolutions.net/form/mail.cgi" method="POST">
-<input type="hidden" name="_uid" value="XXXXXXXX" />
-<input type="hidden" name="_done" value="http://www.www.www/" />
-<input type="hidden" name="_subject" value="FORM MAIL" />
-
-<p><label>名前<span>(必須)</span>：<br>
-<input type="text" name="namae" size="40" required placeholder="名前を入力して下さい" autofocus>
-</label></p>
-
-<p><label>メールアドレス<span>(必須)</span>：<br>
-<input type="email" name="mail" size="40" required placeholder="メールアドレスを入力して下さい">
-</label></p>
-
-<p><label>URL:<br>
-<input type="url" name="url" size="40" placeholder="ホームページのURLを入力して下さい">
-</label></p>
-
-<p><label>コメント：<br>
-<textarea name="comment" cols="50" rows="8" placeholder="コメントなどを入力して下さい"></textarea>
-</label></p>
-
-<p id="button">
-<input type="submit" value="送信">
-</p>
-
-</form>
-
+	<video widht="640" height="360"controls>
+		<source src="sample.mp4" type="video/mp4">
+	</video>
 </article>
 
 <!-- フッター -->
